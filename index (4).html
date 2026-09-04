@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Great Harrogate Awareness Show — Sunday 5th September 2027</title>
+<meta name="description" content="Extraordinary People. Real Stories. One Extraordinary Day. Harrogate Rugby Club, Sunday 5th September 2027, noon till 10pm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy-deep: #0A1838;
+    --navy: #0C1E4A;
+    --navy-mid: #24325A;
+    --slate: #46516B;
+    --slate-2: #56607A;
+    --cream: #FBF5EA;
+    --cream-2: #EFE4CC;
+    --gold: #D8B15C;
+    --gold-2: #EFCB7E;
+    --gold-3: #B8873A;
+    --purple: #5D4AA0;
+    --purple-2: #241A4F;
+    --teal: #2F7D82;
+    --pink: #C2246B;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--cream); font-family: Archivo, system-ui, sans-serif; color: var(--navy); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  a { color: var(--navy); text-decoration: none; }
+  a:hover { color: var(--gold-3); }
+  h1, h2, h3 { margin: 0; }
+  p { margin: 0; }
+  ::selection { background: var(--gold); color: var(--navy-deep); }
+
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes beam { 0% { opacity: .18; transform: translateX(-8%) rotate(8deg); } 50% { opacity: .42; transform: translateX(8%) rotate(12deg); } 100% { opacity: .18; transform: translateX(-8%) rotate(8deg); } }
+  @keyframes beam2 { 0% { opacity: .30; transform: translateX(6%) rotate(-10deg); } 50% { opacity: .12; transform: translateX(-6%) rotate(-14deg); } 100% { opacity: .30; transform: translateX(6%) rotate(-10deg); } }
+  @keyframes bulb { 0%, 100% { opacity: 1; box-shadow: 0 0 10px 2px rgba(239,203,126,.9); } 50% { opacity: .35; box-shadow: 0 0 4px 0px rgba(239,203,126,.4); } }
+  @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes pulse { 0%,100% { transform: scale(1); opacity: .55; } 50% { transform: scale(1.35); opacity: 0; } }
+  @keyframes drift { from { background-position: 0 0; } to { background-position: 600px 0; } }
+  @media (prefers-reduced-motion: reduce) { * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; } }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+  /* header */
+  .site-header { position: sticky; top: 0; z-index: 60; background: rgba(10,24,56,.94); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(216,177,92,.28); }
+  .site-header-inner { max-width: 1180px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .bulb-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gold-2); animation: bulb 2.2s ease-in-out infinite; flex: none; }
+  .brand-text { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--cream-2); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .header-right { display: flex; align-items: center; gap: 18px; }
+  .btn-gold { display: inline-block; background: var(--gold); color: var(--navy-deep); font-weight: 700; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; padding: 11px 20px; border-radius: 999px; white-space: nowrap; transition: transform .2s ease, box-shadow .2s ease; border: none; cursor: pointer; }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(216,177,92,.35); color: var(--navy-deep); }
+  .btn-gold-lg { font-size: 15px; font-weight: 800; padding: 17px 34px; }
+  .btn-gold-lg:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(216,177,92,.4); }
+  .btn-outline { display: inline-block; border: 1px solid rgba(251,245,234,.34); color: var(--cream); font-weight: 700; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; padding: 17px 32px; border-radius: 999px; transition: background .2s ease, border-color .2s ease; }
+  .btn-outline:hover { background: rgba(251,245,234,.09); border-color: rgba(251,245,234,.6); color: var(--cream); }
+  .btn-outline-sm { font-size: 12px; font-weight: 700; padding: 12px 20px; letter-spacing: .12em; }
+  .btn-outline-sm:hover { background: rgba(251,245,234,.1); }
+
+  /* hero */
+  .hero { position: relative; background: var(--navy-deep); overflow: hidden; padding: 0; }
+  .hero-glow { position: absolute; inset: -20% -10% auto -10%; height: 140%; background: radial-gradient(60% 55% at 50% 0%, rgba(93,74,160,.55) 0%, rgba(10,24,56,0) 70%); }
+  .hero-beam-l { position: absolute; top: -30%; left: 8%; width: 30%; height: 150%; background: linear-gradient(180deg, rgba(239,203,126,.30), rgba(239,203,126,0) 70%); filter: blur(28px); animation: beam 9s ease-in-out infinite; }
+  .hero-beam-r { position: absolute; top: -30%; right: 10%; width: 26%; height: 150%; background: linear-gradient(180deg, rgba(120,200,205,.28), rgba(120,200,205,0) 70%); filter: blur(30px); animation: beam2 11s ease-in-out infinite; }
+  .hero-inner { position: relative; max-width: 1180px; margin: 0 auto; padding: 96px 24px 0; }
+  .hero-card { border: 1px solid rgba(216,177,92,.38); border-radius: 6px; padding: 44px 36px 40px; background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01)); position: relative; }
+  .bulb-row { position: absolute; top: -7px; left: 24px; right: 24px; display: flex; justify-content: space-between; }
+  .bulb-sm { width: 6px; height: 6px; border-radius: 50%; background: var(--gold-2); animation: bulb 2.4s ease-in-out infinite; }
+  .hero-content { text-align: center; }
+  .eyebrow-gold { font-size: 11px; letter-spacing: .34em; text-transform: uppercase; color: var(--gold-2); font-weight: 700; }
+  .hero-sub { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.6vw, 30px); color: rgba(251,245,234,.82); margin-top: 26px; }
+  .hero-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(42px, 8.4vw, 118px); line-height: .92; letter-spacing: -.02em; color: var(--cream); margin: 4px 0 0; }
+  .hero-rule-row { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 26px 0 0; }
+  .hero-rule { height: 1px; width: min(120px, 18vw); background: linear-gradient(90deg, rgba(216,177,92,0), rgba(216,177,92,.9)); }
+  .hero-rule.right { background: linear-gradient(270deg, rgba(216,177,92,0), rgba(216,177,92,.9)); }
+  .hero-strap { font-size: clamp(12px, 1.5vw, 15px); letter-spacing: .16em; text-transform: uppercase; color: var(--cream-2); font-weight: 600; text-align: center; }
+  .hero-lede { max-width: 660px; margin: 26px auto 0; font-size: 17px; line-height: 1.65; color: rgba(251,245,234,.74); }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 34px; }
+
+  .facts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: rgba(216,177,92,.22); border: 1px solid rgba(216,177,92,.22); margin-top: 40px; }
+  .fact { background: var(--navy-deep); padding: 22px 20px; text-align: center; }
+  .fact-label { font-size: 10px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+  .fact-value { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; color: var(--cream); margin-top: 8px; }
+
+  .countdown-row { margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; padding-bottom: 8px; }
+  .countdown-cell { min-width: 96px; border: 1px solid rgba(216,177,92,.3); border-radius: 4px; padding: 16px 10px; text-align: center; background: rgba(255,255,255,.03); }
+  .countdown-value { font-family: 'Playfair Display', Georgia, serif; font-size: 38px; line-height: 1; color: var(--gold-2); font-variant-numeric: tabular-nums; }
+  .countdown-label { font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: rgba(251,245,234,.6); margin-top: 8px; font-weight: 600; }
+
+  .ticker-wrap { position: relative; margin-top: 46px; border-top: 1px solid rgba(216,177,92,.25); border-bottom: 1px solid rgba(216,177,92,.25); background: rgba(255,255,255,.03); overflow: hidden; padding: 14px 0; }
+  .ticker-track { display: flex; width: max-content; animation: marquee 34s linear infinite; }
+  .ticker-run { display: flex; align-items: center; gap: 34px; padding-right: 34px; }
+  .ticker-item { display: flex; align-items: center; gap: 34px; }
+  .ticker-item span:first-child { font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: rgba(251,245,234,.78); font-weight: 700; }
+  .ticker-dot { color: var(--gold); font-size: 12px; }
+
+  /* section headers */
+  section { }
+  .section-pad { padding: 96px 24px 0; }
+  .kicker-row { display: flex; align-items: center; gap: 12px; }
+  .kicker-rule { height: 1px; width: 46px; background: var(--gold); }
+  .kicker-gold { font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--gold-3); font-weight: 700; }
+  .kicker-gold-light { font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--gold-2); font-weight: 700; }
+  .h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: clamp(32px, 4.6vw, 54px); line-height: 1.06; margin: 18px 0 0; }
+  .h2-md { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: clamp(30px, 4.2vw, 48px); line-height: 1.08; margin: 16px 0 0; }
+  .lede { font-size: 18px; line-height: 1.7; color: var(--slate); margin: 20px 0 0; }
+  .lede-sm { font-size: 17px; line-height: 1.7; color: var(--slate); margin: 16px 0 0; }
+
+  /* reveal-on-scroll */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s cubic-bezier(.2,.7,.3,1), transform .7s cubic-bezier(.2,.7,.3,1); }
+  .reveal.reveal-left { transform: translateX(-28px); }
+  .reveal.reveal-right { transform: translateX(28px); }
+  .reveal.is-visible { opacity: 1; transform: none; }
+
+  /* pillars */
+  .pillars-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 46px; }
+  .pillar-card { background: #FFFFFF; border: 1px solid rgba(12,30,74,.1); border-radius: 4px; padding: 30px 28px; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+  .pillar-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(12,30,74,.1); border-color: rgba(216,177,92,.7); }
+  .pillar-kicker { font-size: 11px; letter-spacing: .26em; text-transform: uppercase; color: var(--gold-3); font-weight: 700; }
+  .pillar-title { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; margin: 14px 0 10px; }
+  .pillar-body { font-size: 15px; line-height: 1.65; color: var(--slate); }
+
+  /* origin story */
+  .origin { position: relative; margin-top: 80px; background: var(--navy); color: var(--cream); overflow: hidden; }
+  .origin-glow { position: absolute; inset: 0; opacity: .5; background: radial-gradient(50% 60% at 20% 0%, rgba(93,74,160,.45), rgba(12,30,74,0) 70%); }
+  .origin-grid { position: relative; max-width: 1180px; margin: 0 auto; padding: 90px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center; }
+  .origin-text { font-size: 17px; line-height: 1.7; color: rgba(251,245,234,.76); margin: 20px 0 0; }
+  .origin-credit { margin: 26px 0 0; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: var(--gold-3); font-weight: 700; }
+  .origin-quote { margin: 12px 0 0; padding-left: 20px; border-left: 3px solid var(--gold); font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 20px; line-height: 1.5; color: var(--cream-2); }
+  .origin-close { font-size: 16px; line-height: 1.7; color: rgba(251,245,234,.7); margin: 24px 0 0; }
+  .origin-circle-wrap { display: flex; justify-content: center; }
+  .origin-circle { position: relative; width: min(420px, 100%); aspect-ratio: 1; border: 1px solid rgba(216,177,92,.35); border-radius: 50%; display: grid; place-items: center; text-align: center; padding: 40px; animation: float 7s ease-in-out infinite; }
+  .origin-circle-ring { position: absolute; inset: -1px; border-radius: 50%; border: 1px solid rgba(216,177,92,.5); animation: pulse 4.5s ease-out infinite; }
+  .origin-circle-credit { font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: var(--gold-2); font-weight: 700; margin-bottom: 14px; }
+  .origin-circle-quote { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.25; color: var(--cream); }
+  .origin-circle-line1 { font-size: 11px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold-2); margin-top: 22px; font-weight: 700; }
+  .origin-circle-line2 { font-size: 11px; letter-spacing: .28em; text-transform: uppercase; color: rgba(251,245,234,.55); margin-top: 6px; font-weight: 600; }
+
+  /* doors */
+  .doors-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 44px; }
+  .door-card { position: relative; background: #FFFFFF; border: 1px solid rgba(12,30,74,.1); border-top: 3px solid var(--gold); border-radius: 3px; padding: 28px 26px 30px; overflow: hidden; transition: transform .3s ease, box-shadow .3s ease; }
+  .door-card:hover { transform: translateY(-6px); box-shadow: 0 20px 44px rgba(12,30,74,.12); }
+  .door-word { font-family: 'Playfair Display', Georgia, serif; font-size: 28px; letter-spacing: .06em; color: var(--navy); }
+  .door-topic { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-3); font-weight: 700; margin-top: 8px; }
+  .door-quote { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 18px; line-height: 1.45; color: var(--navy-mid); margin-top: 18px; }
+  .door-answer { font-size: 14px; line-height: 1.6; color: var(--slate-2); margin-top: 14px; }
+
+  .awareness-block { max-width: 560px; margin: 24px auto 0; background: var(--navy); border-radius: 4px; padding: 26px 30px; text-align: center; }
+  .awareness-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; color: var(--cream); }
+  .awareness-body { font-size: 14px; line-height: 1.6; color: rgba(251,245,234,.75); margin-top: 8px; }
+
+  /* zones */
+  .zones-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 44px; }
+  .zone-card { background: #FFFFFF; border: 1px solid rgba(12,30,74,.1); border-radius: 4px; overflow: hidden; transition: transform .3s ease, box-shadow .3s ease; }
+  .zone-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(12,30,74,.1); }
+  .zone-media { position: relative; height: 132px; display: grid; place-items: center; overflow: hidden; }
+  .zone-media-pattern { position: absolute; inset: -30% -10%; opacity: .5; background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.14) 0 2px, transparent 2px 22px); }
+  .zone-icon { font-size: 40px; position: relative; }
+  .zone-body { padding: 24px 22px 26px; }
+  .zone-kicker { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-3); font-weight: 700; }
+  .zone-title { font-family: 'Playfair Display', Georgia, serif; font-size: 21px; margin: 8px 0 10px; }
+  .zone-text { font-size: 14px; line-height: 1.65; color: var(--slate); }
+
+  /* lineup */
+  .lineup { position: relative; margin-top: 96px; background: var(--navy-deep); color: var(--cream); overflow: hidden; }
+  .lineup-beam { position: absolute; top: -20%; left: 40%; width: 30%; height: 140%; background: linear-gradient(180deg, rgba(239,203,126,.16), rgba(239,203,126,0) 70%); filter: blur(40px); animation: beam 12s ease-in-out infinite; }
+  .lineup-inner { position: relative; max-width: 1180px; margin: 0 auto; padding: 90px 24px; }
+  .speakers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-top: 44px; }
+  .speaker-card { background: rgba(255,255,255,.045); border: 1px solid rgba(216,177,92,.2); border-radius: 4px; padding: 26px 18px 24px; text-align: center; transition: transform .3s ease, background .3s ease, border-color .3s ease; }
+  .speaker-card:hover { transform: translateY(-6px); background: rgba(255,255,255,.09); border-color: rgba(216,177,92,.55); }
+  .speaker-avatar { width: 66px; height: 66px; margin: 0 auto; border-radius: 50%; border: 2px solid var(--gold); background: linear-gradient(160deg, rgba(47,125,130,.6), rgba(12,30,74,.9)); display: grid; place-items: center; font-family: 'Playfair Display', Georgia, serif; font-size: 22px; color: var(--cream); letter-spacing: .04em; }
+  .speaker-name { font-family: 'Playfair Display', Georgia, serif; font-size: 19px; margin-top: 16px; }
+  .speaker-role { font-size: 12px; line-height: 1.5; color: rgba(251,245,234,.6); margin-top: 6px; }
+
+  .tbc-heading { margin-top: 54px; display: flex; align-items: center; gap: 12px; }
+  .tbc-rule { height: 1px; width: 30px; background: rgba(216,177,92,.4); }
+  .tbc-label { font-size: 11px; letter-spacing: .26em; text-transform: uppercase; color: rgba(251,245,234,.55); font-weight: 700; }
+
+  .speakers-grid-tbc { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-top: 22px; }
+  .speaker-card-tbc { position: relative; background: rgba(255,255,255,.02); border: 1px dashed rgba(216,177,92,.3); border-radius: 4px; padding: 24px 16px 22px; text-align: center; }
+  .tbc-tag { position: absolute; top: 10px; right: 10px; font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: rgba(251,245,234,.45); font-weight: 700; border: 1px solid rgba(251,245,234,.25); border-radius: 999px; padding: 3px 8px; }
+  .speaker-avatar-tbc { width: 58px; height: 58px; margin: 0 auto; border-radius: 50%; border: 1.5px dashed rgba(216,177,92,.5); display: grid; place-items: center; font-family: 'Playfair Display', Georgia, serif; font-size: 19px; color: rgba(251,245,234,.65); letter-spacing: .04em; }
+  .speaker-card-tbc .speaker-name { font-size: 17px; margin-top: 14px; color: rgba(251,245,234,.85); }
+  .speaker-card-tbc .speaker-role { font-size: 11px; color: rgba(251,245,234,.5); }
+
+  .more-note { margin-top: 30px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; justify-content: space-between; border: 1px dashed rgba(216,177,92,.4); border-radius: 4px; padding: 22px 24px; }
+  .more-note-text { font-size: 15px; color: rgba(251,245,234,.8); max-width: 620px; }
+  .more-note-text strong { color: var(--gold-2); }
+
+  /* schedule */
+  .schedule-wrap { position: relative; margin-top: 48px; padding-left: 34px; }
+  .schedule-rail { position: absolute; left: 7px; top: 6px; bottom: 6px; width: 2px; background: rgba(12,30,74,.12); }
+  .schedule-fill { position: absolute; left: 7px; top: 6px; width: 2px; height: 0; background: linear-gradient(180deg, var(--gold), var(--gold-3)); transition: height .2s linear; }
+  .schedule-list { display: grid; gap: 40px; }
+  .schedule-item { position: relative; }
+  .schedule-dot { position: absolute; left: -34px; top: 4px; width: 16px; height: 16px; border-radius: 50%; background: var(--cream); border: 2px solid var(--gold); }
+  .schedule-time { font-size: 11px; letter-spacing: .26em; text-transform: uppercase; color: var(--gold-3); font-weight: 700; }
+  .schedule-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(22px, 2.6vw, 30px); margin: 10px 0 8px; }
+  .schedule-body { font-size: 16px; line-height: 1.7; color: var(--slate); max-width: 760px; }
+
+  .finale-card { margin-top: 46px; background: linear-gradient(120deg, var(--navy), var(--purple-2)); border-radius: 4px; padding: 40px 34px; color: var(--cream); text-align: center; position: relative; overflow: hidden; }
+  .finale-pattern { position: absolute; inset: 0; opacity: .25; background-image: repeating-linear-gradient(90deg, rgba(239,203,126,.5) 0 2px, transparent 2px 46px); animation: drift 18s linear infinite; }
+  .finale-inner { position: relative; }
+  .finale-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(28px, 4vw, 44px); margin-top: 14px; }
+  .finale-body { max-width: 640px; margin: 14px auto 0; font-size: 16px; line-height: 1.7; color: rgba(251,245,234,.78); }
+
+  /* thirds */
+  .thirds-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 44px; }
+  .third-card { background: #FFFFFF; border: 1px solid rgba(12,30,74,.1); border-radius: 4px; padding: 32px 28px; text-align: center; }
+  .third-frac { font-family: 'Playfair Display', Georgia, serif; font-size: 44px; color: var(--gold); }
+  .third-label { font-size: 12px; letter-spacing: .26em; text-transform: uppercase; color: var(--navy); font-weight: 800; margin-top: 8px; }
+  .third-body { font-size: 15px; line-height: 1.65; color: var(--slate); margin: 12px 0 0; }
+
+  /* tickets */
+  .tickets-section { position: relative; margin-top: 96px; background: var(--navy); color: var(--cream); overflow: hidden; }
+  .tickets-glow { position: absolute; inset: 0; background: radial-gradient(60% 60% at 50% 0%, rgba(93,74,160,.4), rgba(12,30,74,0) 70%); }
+  .tickets-inner { position: relative; max-width: 1180px; margin: 0 auto; padding: 90px 24px; }
+  .tickets-head { text-align: center; max-width: 700px; margin: 0 auto; }
+  .tiers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 44px; }
+  .tier-card { position: relative; border-radius: 4px; padding: 30px 24px 28px; text-align: center; transition: transform .3s ease, box-shadow .3s ease; border: 1px solid; }
+  .tier-card:hover { transform: translateY(-6px); box-shadow: 0 20px 44px rgba(0,0,0,.3); }
+  .tier-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--pink); color: #FFF; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; font-weight: 800; padding: 6px 14px; border-radius: 999px; white-space: nowrap; }
+  .tier-name { font-size: 11px; letter-spacing: .26em; text-transform: uppercase; font-weight: 700; opacity: .75; }
+  .tier-price { font-family: 'Playfair Display', Georgia, serif; font-size: 52px; line-height: 1; margin-top: 14px; }
+  .tier-note { font-size: 13px; margin-top: 12px; opacity: .72; }
+
+  .ticket-widget-slot { margin-top: 30px; border: 2px dashed rgba(251,245,234,.35); border-radius: 4px; padding: 40px 28px; text-align: center; background: rgba(255,255,255,.04); }
+  .ticket-widget-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; }
+  .ticket-widget-body { font-size: 14px; color: rgba(251,245,234,.65); margin-top: 10px; max-width: 560px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+  .internal-note { margin-top: 18px; background: rgba(255,255,255,.06); border-left: 3px solid var(--gold); border-radius: 3px; padding: 16px 20px; font-size: 13px; line-height: 1.6; color: rgba(251,245,234,.72); }
+  .internal-note strong { color: var(--gold-2); }
+
+  /* follow */
+  .follow-card { background: #FFFFFF; border: 1px solid rgba(12,30,74,.1); border-radius: 4px; padding: 44px 34px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 34px; align-items: center; }
+  .follow-h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.1; margin: 14px 0 0; }
+  .follow-body { font-size: 16px; line-height: 1.7; color: var(--slate); margin: 14px 0 0; }
+  .follow-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .btn-navy { display: inline-block; background: var(--navy); color: var(--cream); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; padding: 13px 22px; border-radius: 999px; }
+  .btn-navy:hover { background: #182C5E; color: var(--cream); }
+  .btn-line { display: inline-block; border: 1px solid rgba(12,30,74,.25); color: var(--navy); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; padding: 13px 22px; border-radius: 999px; }
+  .btn-line:hover { border-color: var(--gold); color: var(--gold-3); }
+  .involve-list { display: grid; gap: 12px; }
+  .involve-item { display: flex; gap: 14px; align-items: flex-start; border-left: 2px solid var(--gold); padding-left: 16px; }
+  .involve-title { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; color: var(--navy); }
+  .involve-body { font-size: 14px; line-height: 1.6; color: var(--slate-2); margin-top: 5px; }
+
+  /* welfare + faq */
+  .support-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 44px; }
+  .support-h2 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: clamp(24px, 3vw, 32px); margin: 0 0 16px; }
+  .support-p { font-size: 15px; line-height: 1.75; color: var(--slate); margin: 0 0 12px; }
+  .faq-item { border-bottom: 1px solid rgba(12,30,74,.12); }
+  .faq-q { width: 100%; background: none; border: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; cursor: pointer; font-size: 15px; font-weight: 600; color: var(--navy); font-family: inherit; text-align: left; }
+  .faq-icon { font-size: 20px; color: var(--gold-3); line-height: 1; flex: none; transition: transform .3s cubic-bezier(.2,.7,.3,1); display: inline-block; }
+  .faq-icon.open { transform: rotate(45deg); }
+  .faq-a-wrap { display: grid; grid-template-rows: 0fr; opacity: 0; overflow: hidden; transition: grid-template-rows .35s cubic-bezier(.2,.7,.3,1), opacity .3s ease; }
+  .faq-a-wrap.open { grid-template-rows: 1fr; opacity: 1; }
+  .faq-a-wrap > div { min-height: 0; }
+  .faq-a { padding-bottom: 16px; font-size: 15px; line-height: 1.7; color: var(--slate-2); }
+
+  /* final cta + footer */
+  .final-cta { position: relative; margin-top: 90px; background: var(--navy-deep); color: var(--cream); overflow: hidden; }
+  .final-beam-l { position: absolute; top: -40%; left: 20%; width: 34%; height: 180%; background: linear-gradient(180deg, rgba(239,203,126,.22), rgba(239,203,126,0) 70%); filter: blur(36px); animation: beam 10s ease-in-out infinite; }
+  .final-beam-r { position: absolute; top: -40%; right: 18%; width: 30%; height: 180%; background: linear-gradient(180deg, rgba(120,200,205,.2), rgba(120,200,205,0) 70%); filter: blur(38px); animation: beam2 13s ease-in-out infinite; }
+  .final-inner { position: relative; max-width: 900px; margin: 0 auto; padding: 100px 24px; text-align: center; }
+  .final-title-wrap { position: relative; }
+  .final-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(38px, 7vw, 82px); line-height: 1; margin: 20px 0 0; }
+  .final-credit { position: absolute; right: 4px; top: 24px; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: rgba(251,245,234,.45); font-weight: 600; }
+  .final-strap { font-size: 17px; line-height: 1.7; color: rgba(251,245,234,.76); margin: 20px auto 0; max-width: 560px; }
+  .final-cta-btn { margin-top: 34px; }
+
+  .footer-ticker { position: relative; border-top: 1px solid rgba(216,177,92,.25); overflow: hidden; padding: 14px 0; }
+  .footer-ticker-track { display: flex; width: max-content; animation: marquee 30s linear infinite; }
+  .footer-ticker-run { display: flex; align-items: center; gap: 30px; padding-right: 30px; }
+  .footer-ticker-item { display: flex; align-items: center; gap: 30px; }
+  .footer-ticker-item span:first-child { font-size: 12px; letter-spacing: .3em; text-transform: uppercase; color: rgba(251,245,234,.6); font-weight: 700; }
+  .footer-ticker-dot { color: var(--gold); font-size: 11px; }
+  .footer-meta { position: relative; max-width: 1180px; margin: 0 auto; padding: 34px 24px 44px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; font-size: 12px; color: rgba(251,245,234,.5); line-height: 1.7; }
+  .footer-meta-right { text-align: right; }
+</style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <div class="bulb-dot"></div>
+        <div class="brand-text">The Great Harrogate Awareness Show</div>
+      </div>
+      <div class="header-right">
+        <a href="#tickets" class="btn-gold">Book tickets</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-beam-l"></div>
+    <div class="hero-beam-r"></div>
+
+    <div class="hero-inner">
+      <div class="reveal hero-card">
+        <div class="bulb-row"><div class="bulb" style="animation-delay:0.00s;"></div>
+<div class="bulb" style="animation-delay:0.13s;"></div>
+<div class="bulb" style="animation-delay:0.26s;"></div>
+<div class="bulb" style="animation-delay:0.39s;"></div>
+<div class="bulb" style="animation-delay:0.52s;"></div>
+<div class="bulb" style="animation-delay:0.65s;"></div>
+<div class="bulb" style="animation-delay:0.78s;"></div>
+<div class="bulb" style="animation-delay:0.91s;"></div>
+<div class="bulb" style="animation-delay:1.04s;"></div>
+<div class="bulb" style="animation-delay:1.17s;"></div>
+<div class="bulb" style="animation-delay:1.30s;"></div>
+<div class="bulb" style="animation-delay:1.43s;"></div>
+<div class="bulb" style="animation-delay:1.56s;"></div>
+<div class="bulb" style="animation-delay:1.69s;"></div>
+<div class="bulb" style="animation-delay:1.82s;"></div>
+<div class="bulb" style="animation-delay:1.95s;"></div></div>
+
+        <div class="hero-content">
+          <div class="eyebrow-gold">Sunday 5th September 2027 · Harrogate Rugby Club</div>
+          <div class="hero-sub">The Great</div>
+          <h1 class="hero-title">HARROGATE<br>AWARENESS SHOW</h1>
+          <div class="hero-rule-row">
+            <div class="hero-rule"></div>
+            <div class="hero-strap">Extraordinary People · Real Stories · One Extraordinary Day</div>
+            <div class="hero-rule right"></div>
+          </div>
+          <p class="hero-lede">One day in Harrogate where the people already doing remarkable things in this town come together, tell you the truth about it, and show you where the help is. Noon until 10pm, ending with the Harrogate 80s Disco.</p>
+
+          <div class="hero-ctas">
+            <a href="#tickets" class="btn-gold btn-gold-lg">Book your tickets</a>
+            <a href="#lineup" class="btn-outline">See the line-up</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal facts-grid">
+        <div class="fact"><div class="fact-label">When</div><div class="fact-value">Sun 5 Sep 2027</div></div>
+        <div class="fact"><div class="fact-label">Time</div><div class="fact-value">12 noon – 10pm</div></div>
+        <div class="fact"><div class="fact-label">Where</div><div class="fact-value">Harrogate Rugby Club</div></div>
+        <div class="fact"><div class="fact-label">Who for</div><div class="fact-value">Every generation</div></div>
+      </div>
+
+      <div class="reveal countdown-row" id="countdown-row">
+        <div class="countdown-cell"><div class="countdown-value" id="cd-d">00</div><div class="countdown-label">Days</div></div>
+        <div class="countdown-cell"><div class="countdown-value" id="cd-h">00</div><div class="countdown-label">Hours</div></div>
+        <div class="countdown-cell"><div class="countdown-value" id="cd-m">00</div><div class="countdown-label">Minutes</div></div>
+        <div class="countdown-cell"><div class="countdown-value" id="cd-s">00</div><div class="countdown-label">Seconds</div></div>
+      </div>
+    </div>
+
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <div class="ticker-run"><span class="ticker-item"><span>Stay</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Belong</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Enable</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Thrive</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Grow</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Rebuild</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Play</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Celebrate</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Pass it on</span><span class="ticker-dot">✦</span></span></div>
+        <div class="ticker-run"><span class="ticker-item"><span>Stay</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Belong</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Enable</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Thrive</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Grow</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Rebuild</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Play</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Celebrate</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Pass it on</span><span class="ticker-dot">✦</span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section-pad" style="padding-bottom: 20px;">
+    <div class="reveal" style="max-width: 780px;">
+      <div class="kicker-row"><div class="kicker-rule"></div><div class="kicker-gold">The founding year</div></div>
+      <h2 class="h2">A day of learning, inspiration and connection</h2>
+      <p class="lede">This is not a conference and it is not a fundraiser with a raffle. It is a day where Harrogate's charities, support organisations, clubs and businesses stand alongside people who have lived through the hardest things a person can live through, and both are genuinely reachable, in one place, for the price of a cinema ticket.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="reveal pillar-card">
+        <div class="pillar-kicker">On stage</div>
+        <h3 class="pillar-title">Real stories, told properly</h3>
+        <p class="pillar-body">Suicide prevention, homelessness, disability, neurodiversity, business, sport. Told by people who lived them, with time for questions afterwards, not a talk and a rush to the next thing.</p>
+      </div>
+      <div class="reveal pillar-card">
+        <div class="pillar-kicker">In the room</div>
+        <h3 class="pillar-title">The help is in the room</h3>
+        <p class="pillar-body">Behind every story sits the local organisation already doing that work. You hear what happened, then you can walk ten feet and talk to the people who can help.</p>
+      </div>
+      <div class="reveal pillar-card">
+        <div class="pillar-kicker">All day</div>
+        <h3 class="pillar-title">Built for all ages</h3>
+        <p class="pillar-body">Children, teenagers, parents, grandparents. Sport, music, activities and a finale designed so three generations end the day on the same dance floor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="origin">
+    <div class="origin-glow"></div>
+    <div class="origin-grid">
+      <div class="reveal reveal-left">
+        <div class="kicker-row"><div class="kicker-rule"></div><div class="kicker-gold-light">Where it comes from</div></div>
+        <h2 class="h2-md" style="color: var(--cream);">It starts with a field near Harrogate</h2>
+        <p class="origin-text">Steve Tappin's father began with little more than a field, a few small aircraft, and fewer than a hundred people paying about a fiver to come and watch. He kept growing it. The field got bigger. The aircraft got bigger. Helicopters arrived. Then the Red Arrows. Eventually it became the Yorkshire Air Show, up to 20,000 people a day.</p>
+        <div class="origin-credit">In memory of Dave Tappin</div>
+        <blockquote class="origin-quote">He loved aircraft. But his real gift was bringing people together around an audacious idea, and making possible something others thought impossible.</blockquote>
+        <p class="origin-close">The Show carries that spirit forward, in memory of David and Sylvia Tappin, and for everyone in this town who has been left behind by something. It begins small again, on purpose. A founding year. One field. One day.</p>
+      </div>
+      <div class="reveal reveal-right origin-circle-wrap">
+        <div class="origin-circle">
+          <div class="origin-circle-ring"></div>
+          <div>
+            <div class="origin-circle-credit">In memory of Sylvia Tappin</div>
+            <div class="origin-circle-quote">&ldquo;No one gets<br>left behind.&rdquo;</div>
+            <div class="origin-circle-line1">Every person matters</div>
+            <div class="origin-circle-line2">Every generation counts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section-pad" id="programme">
+    <div class="reveal" style="max-width: 720px;">
+      <div class="kicker-row"><div class="kicker-rule"></div><div class="kicker-gold">The eight areas</div></div>
+      <h2 class="h2">Eight doors into the same day</h2>
+      <p class="lede-sm" style="font-size:18px;">Whatever brought you here, it will help you work out that there is always a way. The Show doesn't claim to have all the answers. But we will do our best to raise your awareness, and put in front of you the leaders, people and organisations who can help you and your family grow and find your way.</p>
+    </div>
+
+    <div class="doors-grid">
+        <div class="reveal door-card">
+          <div class="door-word">STAY</div>
+          <div class="door-topic">Suicide Prevention & Mental Health</div>
+          <div class="door-quote">“I am struggling.”</div>
+          <div class="door-answer">Raise your awareness. There is someone here. You matter. Stay.</div>
+        </div>
+        <div class="reveal door-card">
+          <div class="door-word">BELONG</div>
+          <div class="door-topic">Neurodiversity & Inclusion</div>
+          <div class="door-quote">“I experience the world differently.”</div>
+          <div class="door-answer">Raise your awareness. There is a place for you. You belong.</div>
+        </div>
+        <div class="reveal door-card">
+          <div class="door-word">ENABLE</div>
+          <div class="door-topic">Disability, Accessibility & Opportunity</div>
+          <div class="door-quote">“I want the same opportunity to participate.”</div>
+          <div class="door-answer">Raise your awareness. Remove the barriers. See my ability.</div>
+        </div>
+        <div class="reveal door-card">
+          <div class="door-word">THRIVE</div>
+          <div class="door-topic">Health, Wellness & Healthy Ageing</div>
+          <div class="door-quote">“I can make choices that improve my life.”</div>
+          <div class="door-answer">Raise your awareness. Live happier. Live healthier. Live longer.</div>
+        </div>
+        <div class="reveal door-card">
+          <div class="door-word">GROW</div>
+          <div class="door-topic">Leadership, Enterprise & Financial Wellbeing</div>
+          <div class="door-quote">“I want to create more possibility in my life.”</div>
+          <div class="door-answer">Raise your awareness. Grow your leadership. Create opportunity.</div>
+        </div>
+        <div class="reveal door-card">
+          <div class="door-word">REBUILD</div>
+          <div class="door-topic">Homelessness, Recovery & Second Chances</div>
+          <div class="door-quote">“Things have gone wrong.”</div>
+          <div class="door-answer">Raise your awareness. There can be another chapter.</div>
+        </div>
+        <div class="reveal door-card">
+          <div class="door-word">PLAY</div>
+          <div class="door-topic">Football, Sport & Community</div>
+          <div class="door-quote">“I want to participate.”</div>
+          <div class="door-answer">Raise your awareness. Everyone deserves a team.</div>
+        </div>
+        <div class="reveal door-card">
+          <div class="door-word">CELEBRATE</div>
+          <div class="door-topic">Music, Inspiration & Entertainment</div>
+          <div class="door-quote">“I am part of something.”</div>
+          <div class="door-answer">Raise your awareness. Life is worth celebrating.</div>
+        </div></div>
+
+    <div class="reveal awareness-block">
+      <div class="awareness-title">Raising your Awareness</div>
+      <div class="awareness-body">Releasing ego, and increasing positive power and impact, together.</div>
+    </div>
+  </section>
+
+  <section class="wrap" style="margin-top: 96px;">
+    <div class="reveal" style="max-width: 720px;">
+      <div class="kicker-row"><div class="kicker-rule"></div><div class="kicker-gold">On the ground</div></div>
+      <h2 class="h2">Five zones across the field</h2>
+      <p class="lede-sm" style="font-size:18px;">The eight doors are the themes. These are the places you'll actually stand on the day.</p>
+    </div>
+
+    <div class="zones-grid">
+        <div class="reveal zone-card">
+          <div class="zone-media" style="background:linear-gradient(135deg, #0C1E4A, #2F7D82);">
+            <div class="zone-media-pattern"></div>
+            <div class="zone-icon">💼</div>
+          </div>
+          <div class="zone-body">
+            <div class="zone-kicker">Zone</div>
+            <h3 class="zone-title">Entrepreneurial Zone</h3>
+            <p class="zone-text">Top British CEOs and Yorkshire and Harrogate entrepreneurs, each sharing best practice you can apply at every stage of your business, and in your own leadership development.</p>
+          </div>
+        </div>
+        <div class="reveal zone-card">
+          <div class="zone-media" style="background:linear-gradient(135deg, #241A4F, #5D4AA0);">
+            <div class="zone-media-pattern"></div>
+            <div class="zone-icon">🤝</div>
+          </div>
+          <div class="zone-body">
+            <div class="zone-kicker">Zone</div>
+            <h3 class="zone-title">Special Situations Zone</h3>
+            <p class="zone-text">The best global and British inspiring leaders in suicide prevention, neurodiversity, disability and mental health, hosting sessions alongside Harrogate's own expert support providers, to help people and their families find the support that's right for them.</p>
+          </div>
+        </div>
+        <div class="reveal zone-card">
+          <div class="zone-media" style="background:linear-gradient(135deg, #0C1E4A, #B8873A);">
+            <div class="zone-media-pattern"></div>
+            <div class="zone-icon">🌿</div>
+          </div>
+          <div class="zone-body">
+            <div class="zone-kicker">Zone</div>
+            <h3 class="zone-title">Health, Wellness & Longevity Zone</h3>
+            <p class="zone-text">Experiences in the latest best practice for health, wellness and extended longevity, including Pilates, singing, dance and breathwork.</p>
+          </div>
+        </div>
+        <div class="reveal zone-card">
+          <div class="zone-media" style="background:linear-gradient(135deg, #5D4AA0, #C2246B);">
+            <div class="zone-media-pattern"></div>
+            <div class="zone-icon">✦</div>
+          </div>
+          <div class="zone-body">
+            <div class="zone-kicker">Zone</div>
+            <h3 class="zone-title">Awareness Code Zone</h3>
+            <p class="zone-text">Experiences that help you understand and release ego, and start living from the higher levels of human awareness, so you can step forward, together, into your passions and have a go at the incredible things in your life and with your family.</p>
+          </div>
+        </div>
+        <div class="reveal zone-card">
+          <div class="zone-media" style="background:linear-gradient(135deg, #2F7D82, #0C1E4A);">
+            <div class="zone-media-pattern"></div>
+            <div class="zone-icon">🎈</div>
+          </div>
+          <div class="zone-body">
+            <div class="zone-kicker">Zone</div>
+            <h3 class="zone-title">Kids & Family Zone</h3>
+            <p class="zone-text">Inspiring leaders encouraging children to get involved and give their best for charitable causes, alongside a range of educational experiences for their learning and development.</p>
+          </div>
+        </div></div>
+  </section>
+
+  <section class="lineup" id="lineup">
+    <div class="lineup-beam"></div>
+    <div class="lineup-inner">
+      <div class="reveal" style="max-width: 760px;">
+        <div class="kicker-row"><div class="kicker-rule"></div><div class="kicker-gold-light">On the main stage</div></div>
+        <h2 class="h2">Extraordinary Life Stories, live</h2>
+        <p class="origin-text">The day is hosted by John Reynolds, creator of Extraordinary Life Stories, who will be drawing out the stories of Harrogate's own extraordinary people on the main stage. The first town to be told this way.</p>
+      </div>
+
+      <div class="speakers-grid">
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">ST</div>
+          <div class="speaker-name">Steve Tappin</div>
+          <div class="speaker-role">Founder · CEO coach and host of CEO Guru</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">JR</div>
+          <div class="speaker-name">John Reynolds</div>
+          <div class="speaker-role">Host · Extraordinary Life Stories</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">PD</div>
+          <div class="speaker-name">Paul Drechsler</div>
+          <div class="speaker-role">[[Role to confirm]]</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">BD</div>
+          <div class="speaker-name">Brian Dean</div>
+          <div class="speaker-role">[[Role to confirm]]</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">SP</div>
+          <div class="speaker-name">Sarah Pratt</div>
+          <div class="speaker-role">[[Role to confirm]]</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">JM</div>
+          <div class="speaker-name">Javeno McLean</div>
+          <div class="speaker-role">[[Role to confirm]]</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">CB</div>
+          <div class="speaker-name">Carly Barnes</div>
+          <div class="speaker-role">CEO, Sport and Media Group · Standing up for justice against regulators</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">WL</div>
+          <div class="speaker-name">Wayne Linton</div>
+          <div class="speaker-role">Awareness and self-leadership</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">KB</div>
+          <div class="speaker-name">Kit Burks</div>
+          <div class="speaker-role">Suicide prevention</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">GF</div>
+          <div class="speaker-name">George Fielding</div>
+          <div class="speaker-role">Disability leadership</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">FA</div>
+          <div class="speaker-name">Frankie Arpino</div>
+          <div class="speaker-role">Neurodiversity</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">MO</div>
+          <div class="speaker-name">Martin O'Shea</div>
+          <div class="speaker-role">Health and wellness</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">NB</div>
+          <div class="speaker-name">Nick Baten</div>
+          <div class="speaker-role">Leadership and performance</div>
+        </div>
+        <div class="reveal speaker-card">
+          
+          <div class="speaker-avatar">✦</div>
+          <div class="speaker-name">More to come</div>
+          <div class="speaker-role">Further guest speakers announced weekly</div>
+        </div></div>
+
+      <div class="reveal tbc-heading"><div class="tbc-rule"></div><div class="tbc-label">In conversation · to be confirmed</div></div>
+
+      <div class="speakers-grid-tbc">
+        <div class="reveal speaker-card-tbc">
+          <div class="tbc-tag">TBC</div>
+          <div class="speaker-avatar-tbc">SH</div>
+          <div class="speaker-name">Shirley-Ann Haig</div>
+          <div class="speaker-role">Multiple income streams for women</div>
+        </div>
+        <div class="reveal speaker-card-tbc">
+          <div class="tbc-tag">TBC</div>
+          <div class="speaker-avatar-tbc">EN</div>
+          <div class="speaker-name">Emma Novell</div>
+          <div class="speaker-role">CEO, Popvox</div>
+        </div>
+        <div class="reveal speaker-card-tbc">
+          <div class="tbc-tag">TBC</div>
+          <div class="speaker-avatar-tbc">IS</div>
+          <div class="speaker-name">Ishbel Straker</div>
+          <div class="speaker-role">Consultant nurse & mental health therapist · Standing up for justice against regulators</div>
+        </div>
+        <div class="reveal speaker-card-tbc">
+          <div class="tbc-tag">TBC</div>
+          <div class="speaker-avatar-tbc">AB</div>
+          <div class="speaker-name">Sir Alan Bates</div>
+          <div class="speaker-role">Former Sub Postmaster · Founder, Justice for Subpostmasters Alliance</div>
+        </div>
+        <div class="reveal speaker-card-tbc">
+          <div class="tbc-tag">TBC</div>
+          <div class="speaker-avatar-tbc">SW</div>
+          <div class="speaker-name">Simon Weaver</div>
+          <div class="speaker-role">[[Role to confirm]]</div>
+        </div>
+        <div class="reveal speaker-card-tbc">
+          <div class="tbc-tag">TBC</div>
+          <div class="speaker-avatar-tbc">SB</div>
+          <div class="speaker-name">Sarah Barry</div>
+          <div class="speaker-role">[[Role to confirm]]</div>
+        </div></div>
+
+      <div class="reveal more-note">
+        <div class="more-note-text">More storytellers, leaders and changemakers are being confirmed and <strong>announced weekly</strong> between now and the day. Follow along so you see each name first.</div>
+        <div><a href="#follow" class="btn-outline btn-outline-sm">Follow the Show</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section-pad">
+    <div class="reveal" style="max-width: 720px;">
+      <div class="kicker-row"><div class="kicker-rule"></div><div class="kicker-gold">Running order</div></div>
+      <h2 class="h2">How the day runs</h2>
+      <p class="lede" style="margin-top:18px;">Come for an hour or stay for ten. Your ticket covers all of it, including the evening.</p>
+    </div>
+
+    <div class="schedule-wrap">
+      <div class="schedule-rail"></div>
+      <div class="schedule-fill" id="schedule-fill"></div>
+      <div class="schedule-list">
+        <div class="reveal schedule-item">
+          <div class="schedule-dot"></div>
+          <div class="schedule-time">From 12 noon · Open</div>
+          <h3 class="schedule-title">The Show begins</h3>
+          <p class="schedule-body">Doors, music across the site, and the opening session. Harrogate’s extraordinary town stories, hosted by John Reynolds. The founder tells the story of how this came to be.</p>
+        </div>
+        <div class="reveal schedule-item">
+          <div class="schedule-dot"></div>
+          <div class="schedule-time">Afternoon · Experience</div>
+          <h3 class="schedule-title">Eight areas, running at once</h3>
+          <p class="schedule-body">Move between them freely. Every talk has time for questions afterwards, because the conversation matters more than the speech. Sport, children’s activities and the health and wellness quarter run throughout.</p>
+        </div>
+        <div class="reveal schedule-item">
+          <div class="schedule-dot"></div>
+          <div class="schedule-time">Late afternoon · Come together</div>
+          <h3 class="schedule-title">Everyone in one place</h3>
+          <p class="schedule-body">Stories from the day are shared, partners are thanked, and young people and older generations come together. The music starts to shift.</p>
+        </div>
+        <div class="reveal schedule-item">
+          <div class="schedule-dot"></div>
+          <div class="schedule-time">8pm – 10pm · Celebrate</div>
+          <h3 class="schedule-title">Dance the night away</h3>
+          <p class="schedule-body">The Show moves from awareness into celebration, and the day ends the way it should, with the whole town on the same floor.</p>
+        </div></div>
+    </div>
+
+    <div class="reveal finale-card">
+      <div class="finale-pattern"></div>
+      <div class="finale-inner">
+        <div class="kicker-gold-light">8pm – 10pm · Celebrate</div>
+        <div class="finale-title">The Harrogate 80s Disco</div>
+        <p class="finale-body">Familiar songs, big choruses, and three generations on the same floor. Wear white if you like, in memory of David Tappin and his famous white disco trousers. Included in every ticket.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section-pad">
+    <div class="reveal" style="text-align: center; max-width: 720px; margin: 0 auto;">
+      <div class="kicker-gold">Where the money goes</div>
+      <h2 class="h2-md">Split three ways, in the open</h2>
+      <p class="lede-sm">No funds or proceeds are taken by the founder or the core contributors. The speakers are giving their time. After the costs of putting the day on, the net proceeds are split three ways.</p>
+    </div>
+    <div class="thirds-grid">
+        <div class="reveal third-card">
+          <div class="third-frac">⅓</div>
+          <div class="third-label">Support</div>
+          <p class="third-body">The specific causes and communities represented at the Show.</p>
+        </div>
+        <div class="reveal third-card">
+          <div class="third-frac">⅓</div>
+          <div class="third-label">Develop</div>
+          <p class="third-body">Helping Harrogate’s children and next generation raise their awareness and access new opportunities.</p>
+        </div>
+        <div class="reveal third-card">
+          <div class="third-frac">⅓</div>
+          <div class="third-label">Build</div>
+          <p class="third-body">Building the future of the Show and ambitious community legacy projects for Harrogate.</p>
+        </div></div>
+  </section>
+
+  <section class="tickets-section" id="tickets">
+    <div class="tickets-glow"></div>
+    <div class="tickets-inner">
+      <div class="reveal tickets-head">
+        <div class="kicker-gold-light">Tickets</div>
+        <h2 class="h2">One ticket. The whole day.</h2>
+        <p class="lede-sm" style="color: rgba(251,245,234,.76);">Priced so that money is never the reason a family doesn't come. Noon till 10pm, disco included.</p>
+      </div>
+
+      <div class="tiers-grid">
+        <div class="reveal tier-card" style="background:rgba(255,255,255,.05);border-color:rgba(216,177,92,.25);color:#FBF5EA;">
+          
+          <div class="tier-name">Adult</div>
+          <div class="tier-price">£15</div>
+          <div class="tier-note">Noon till 10pm</div>
+        </div>
+        <div class="reveal tier-card" style="background:#EFDCA9;border-color:#EFDCA9;color:#0A1838;">
+          <div class="tier-badge">Best value</div>
+          <div class="tier-name">Family</div>
+          <div class="tier-price">£35</div>
+          <div class="tier-note">2 adults + 2 children</div>
+        </div>
+        <div class="reveal tier-card" style="background:rgba(255,255,255,.05);border-color:rgba(216,177,92,.25);color:#FBF5EA;">
+          
+          <div class="tier-name">Child</div>
+          <div class="tier-price">£3</div>
+          <div class="tier-note">Under 5s free</div>
+        </div>
+        <div class="reveal tier-card" style="background:rgba(255,255,255,.05);border-color:rgba(216,177,92,.25);color:#FBF5EA;">
+          
+          <div class="tier-name">Concession</div>
+          <div class="tier-price">£3</div>
+          <div class="tier-note">Over 65s & additional needs</div>
+        </div></div>
+
+      <div class="reveal ticket-widget-slot">
+        <div class="ticket-widget-title">Ticket Tailor widget goes here</div>
+        <div class="ticket-widget-body">Ticket Tailor, then Sell tickets, then Website widget, then copy the embed code and send it over and I'll drop it in. Capacity-based, so on-the-door sales and family/adult splits look after themselves.</div>
+      </div>
+
+      <div class="reveal internal-note"><strong>Internal note: prices not confirmed.</strong> These are the figures from the first meeting. They need signing off by Steve before this page goes public, and they must match exactly what's set up in the ticketing platform.</div>
+    </div>
+  </section>
+
+  <section class="wrap section-pad" id="follow">
+    <div class="reveal follow-card">
+      <div>
+        <div class="kicker-gold">Between now and September</div>
+        <h2 class="follow-h2">Follow the Show as it's built</h2>
+        <p class="follow-body">Every week between now and the day, another speaker, another story and another organisation is announced. Schools, clubs and families across Harrogate are being brought in. This is the founding year, and you can watch it come together.</p>
+        <div class="follow-ctas">
+          <a href="#" class="btn-navy">Instagram</a>
+          <a href="#" class="btn-line">Sponsor, exhibit or help</a>
+        </div>
+      </div>
+      <div class="involve-list">
+        <div class="involve-item">
+          <div class="involve-title">Schools & young people</div>
+          <div class="involve-body">We want as many children and teenagers involved as the day can hold. Get your school on the list.</div>
+        </div>
+        <div class="involve-item">
+          <div class="involve-title">Charities & organisations</div>
+          <div class="involve-body">If you already do this work in Harrogate, there is a place for you in one of the eight areas.</div>
+        </div>
+        <div class="involve-item">
+          <div class="involve-title">Sponsors & volunteers</div>
+          <div class="involve-body">Founding-year partners make the day possible, and their names stay attached to it.</div>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding: 70px 24px 0;">
+    <div class="support-grid">
+      <div class="reveal">
+        <h2 class="support-h2">If you're struggling right now</h2>
+        <p class="support-p">Parts of this day deal openly with suicide, mental health, homelessness and loss. The Show exists to connect people with help. It does not replace professional help, and it is not a crisis service.</p>
+        <p class="support-p">If you need support today, please contact your GP, call NHS 111, or in an emergency call 999. Samaritans are available free, day or night, on 116 123.</p>
+        <p class="support-p" style="margin-bottom:0;">There will be a quiet welfare space, trained staff and qualified safeguarding leads on site all day. Sessions covering difficult subjects will be clearly marked in the programme.</p>
+      </div>
+      <div class="reveal">
+        <h2 class="support-h2">Useful to know</h2>
+        <div>
+        <div class="faq-item">
+          <button class="faq-q" data-faq="0">
+            <span>Where is it?</span>
+            <span class="faq-icon" data-faq-icon="0">+</span>
+          </button>
+          <div class="faq-a-wrap" data-faq-body="0">
+            <div class="faq-a">Harrogate Rugby Club, The Avenue, Harrogate HG2 8JR. Parking on site, and a short run from the town centre.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-faq="1">
+            <span>What time should we come?</span>
+            <span class="faq-icon" data-faq-icon="1">+</span>
+          </button>
+          <div class="faq-a-wrap" data-faq-body="1">
+            <div class="faq-a">Doors from 12 noon and the day runs until 10pm. Come for an hour or stay for all of it. The ticket is the same.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-faq="2">
+            <span>Can we bring children?</span>
+            <span class="faq-icon" data-faq-icon="2">+</span>
+          </button>
+          <div class="faq-a-wrap" data-faq-body="2">
+            <div class="faq-a">Yes, the day is built for every generation. Children’s activities, sport and music run throughout, and under 5s are free.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-faq="3">
+            <span>Can we come to the disco if we miss the day?</span>
+            <span class="faq-icon" data-faq-icon="3">+</span>
+          </button>
+          <div class="faq-a-wrap" data-faq-body="3">
+            <div class="faq-a">Yes. The 80s Disco runs 8pm–10pm and is included in every ticket, so you can join later in the evening.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-faq="4">
+            <span>What if it rains?</span>
+            <span class="faq-icon" data-faq-icon="4">+</span>
+          </button>
+          <div class="faq-a-wrap" data-faq-body="4">
+            <div class="faq-a">The Show runs whatever the weather. The main stage, the eight areas and the evening are all under cover.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-faq="5">
+            <span>Is there food and drink?</span>
+            <span class="faq-icon" data-faq-icon="5">+</span>
+          </button>
+          <div class="faq-a-wrap" data-faq-body="5">
+            <div class="faq-a">Yes, food and a licensed bar are available on site all day.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-faq="6">
+            <span>Is it accessible?</span>
+            <span class="faq-icon" data-faq-icon="6">+</span>
+          </button>
+          <div class="faq-a-wrap" data-faq-body="6">
+            <div class="faq-a">Step-free access, accessible toilets, a quiet welfare space and concession tickets for additional needs. Tell us what you need and we’ll make it work.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-faq="7">
+            <span>Can I buy on the door?</span>
+            <span class="faq-icon" data-faq-icon="7">+</span>
+          </button>
+          <div class="faq-a-wrap" data-faq-body="7">
+            <div class="faq-a">Yes, subject to capacity, but booking ahead is the only way to be certain, and it helps us plan the day.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-faq="8">
+            <span>We’d like to sponsor, exhibit or help</span>
+            <span class="faq-icon" data-faq-icon="8">+</span>
+          </button>
+          <div class="faq-a-wrap" data-faq-body="8">
+            <div class="faq-a">Local organisations, businesses and volunteers are all part of this. Get in touch and we’ll find the right way in for you.</div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="final-beam-l"></div>
+    <div class="final-beam-r"></div>
+    <div class="reveal final-inner">
+      <div class="eyebrow-gold">Sunday 5th September 2027 · Harrogate Rugby Club · Noon till 10pm</div>
+      <div class="final-title-wrap">
+        <h2 class="final-title">Anything is possible</h2>
+        <div class="final-credit">Dave Tappin</div>
+      </div>
+      <p class="final-strap">Extraordinary People. Real Stories. One Extraordinary Day.</p>
+      <div class="final-cta-btn">
+        <a href="#tickets" class="btn-gold btn-gold-lg">Book your tickets</a>
+      </div>
+    </div>
+
+    <div class="footer-ticker">
+      <div class="footer-ticker-track">
+        <div class="footer-ticker-run"><span class="ticker-item"><span>Stay</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Belong</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Enable</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Thrive</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Grow</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Rebuild</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Play</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Celebrate</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Pass it on</span><span class="ticker-dot">✦</span></span></div>
+        <div class="footer-ticker-run"><span class="ticker-item"><span>Stay</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Belong</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Enable</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Thrive</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Grow</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Rebuild</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Play</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Celebrate</span><span class="ticker-dot">✦</span></span><span class="ticker-item"><span>Pass it on</span><span class="ticker-dot">✦</span></span></div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <div>Harrogate Rugby Club, The Avenue, Harrogate HG2 8JR<br>[[EMAIL]] · [[@HANDLE]]</div>
+      <div class="footer-meta-right">In memory of David Henry Tappin and Sylvia Tappin.<br>[[Legal entity]] · Privacy policy: [[link]]</div>
+    </div>
+  </section>
+
+<script>
+(function () {
+  // Countdown
+  var target = new Date('2027-09-05T12:00:00+01:00').getTime();
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    var diff = Math.max(0, target - Date.now());
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    var elD = document.getElementById('cd-d');
+    var elH = document.getElementById('cd-h');
+    var elM = document.getElementById('cd-m');
+    var elS = document.getElementById('cd-s');
+    if (elD) elD.textContent = pad(d);
+    if (elH) elH.textContent = pad(h);
+    if (elM) elM.textContent = pad(m);
+    if (elS) elS.textContent = pad(s);
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // Reveal on scroll
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+  document.querySelectorAll('.reveal').forEach(function (el, i) {
+    el.style.transitionDelay = ((i % 4) * 60) + 'ms';
+    io.observe(el);
+  });
+
+  // Schedule timeline fill on scroll
+  var fill = document.getElementById('schedule-fill');
+  function onScroll() {
+    if (!fill || !fill.parentElement) return;
+    var box = fill.parentElement.getBoundingClientRect();
+    var vh = window.innerHeight;
+    var p = Math.min(1, Math.max(0, (vh * 0.7 - box.top) / box.height));
+    fill.style.height = (p * box.height) + 'px';
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // FAQ accordion
+  document.querySelectorAll('[data-faq]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var idx = btn.getAttribute('data-faq');
+      var body = document.querySelector('[data-faq-body="' + idx + '"]');
+      var icon = document.querySelector('[data-faq-icon="' + idx + '"]');
+      var isOpen = body.classList.contains('open');
+      document.querySelectorAll('.faq-a-wrap.open').forEach(function (b) { b.classList.remove('open'); });
+      document.querySelectorAll('.faq-icon.open').forEach(function (b) { b.classList.remove('open'); });
+      if (!isOpen) {
+        body.classList.add('open');
+        icon.classList.add('open');
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
